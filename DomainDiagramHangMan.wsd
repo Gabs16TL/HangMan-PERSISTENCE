@@ -1,0 +1,70 @@
+@startuml
+
+object player
+object HangMan
+
+player : name = "Player1"
+player : id = 1
+player : rol = "WordGiver"
+
+object turn
+
+turn : attempts = "6"
+turn : gameFinished = true
+turn : winner = "Player1"
+
+
+object "secretWord" as SecretWord1{
+    position= "1"
+    value= "F"
+    result:"guessed"
+}
+object "secretWord" as SecretWord2{
+    position= "2"
+    value= "R"
+    result:"guessed"
+
+}
+object "secretWord" as SecretWord3{
+    position= "3"
+    value= "I"
+    result:"failed"
+    wrongLetter: "C"
+}
+object "secretWord" as SecretWord4{
+    position= "4"
+    value= "D"
+    result:"guessed"
+
+}
+object "secretWord" as SecretWord5{
+    position= "5"
+    value= "A"
+    result:"guessed"
+
+}
+object "secretWord" as SecretWord6{
+    position= "6"
+    value= "Y"
+    result:"guessed"
+
+}
+object "secretWord" as SecretWord7{
+    position= "3"
+    value= "I"
+    result:"guessed"
+
+}
+
+player*--turn
+turn*-down-HangMan
+
+SecretWord1--*HangMan
+SecretWord2--*HangMan
+SecretWord3--*HangMan
+SecretWord4--*HangMan
+SecretWord5--*HangMan
+SecretWord6--*HangMan
+SecretWord7--*HangMan
+
+@enduml

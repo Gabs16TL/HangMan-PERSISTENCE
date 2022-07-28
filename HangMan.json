@@ -1,0 +1,61 @@
+{
+    "players": [
+        {
+            "name": "Player 1",
+            "rol": "WordGusser"
+        },
+        {
+            "name": "Player 2",
+            "rol": "WordGiver"
+        }
+    ],
+    "turn": [
+        {
+            "attempts": "7",
+            "gameFinished": true,
+            "winner": {
+                "name": "Player 1"
+            }
+        }
+    ],
+    "secretWord": [
+        {
+            "position": 1,
+            "value": "F",
+            "result": "guessed"
+        },
+        {
+            "position": 2,
+            "value": "R",
+            "result": "guessed"
+        },
+        {
+            "position": 3,
+            "value": "I",
+            "result": "failed",
+            "wrongLetters": {
+                "wrongLetter": "C"
+            }
+        },
+        {
+            "position": 4,
+            "value": "D",
+            "result": "guessed"
+        },
+        {
+            "position": 5,
+            "value": "A",
+            "result": "guessed"
+        },
+        {
+            "position": 6,
+            "value": "Y",
+            "result": "guessed"
+        },
+        {
+            "position": 3,
+            "value": "I",
+            "result": "guessed"
+        }
+    ]
+}
